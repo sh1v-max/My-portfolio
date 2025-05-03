@@ -25,6 +25,8 @@
     --breakpoint-2xl: 96rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
     --font-weight-bold: 700;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -5589,9 +5591,49 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .font-\[\'\'\] {
+    font-family: '';
+  }
+  .font-\[\'Merriweather\'\] {
+    font-family: 'Merriweather';
+  }
+  .font-\[\'N\'\] {
+    font-family: 'N';
+  }
+  .font-\[\'Nunito\'\] {
+    font-family: 'Nunito';
+  }
+  .font-\[\'me\'\] {
+    font-family: 'me';
+  }
+  .font-\[\'mer\'\] {
+    font-family: 'mer';
+  }
+  .font-\[\'meri\'\] {
+    font-family: 'meri';
+  }
+  .font-\[\'merriweather\'\] {
+    font-family: 'merriweather';
+  }
+  .font-\[\'s\'\] {
+    font-family: 's';
+  }
+  .font-\[\'spar\'\] {
+    font-family: 'spar';
+  }
+  .font-\[\'spartan\'\] {
+    font-family: 'spartan';
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-\[64px\] {
+    font-size: 64px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -5611,6 +5653,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .italic {
+    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;
