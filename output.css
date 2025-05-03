@@ -6248,6 +6248,13 @@
       }
     }
   }
+  .hover\:cursor-alias {
+    &:hover {
+      @media (hover: hover) {
+        cursor: alias;
+      }
+    }
+  }
   .hover\:cursor-pointer {
     &:hover {
       @media (hover: hover) {
@@ -6346,6 +6353,11 @@
   .md\:ml-24 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 24);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
   .md\:w-\[650px\] {

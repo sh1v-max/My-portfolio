@@ -7,6 +7,7 @@
   <title>Shiv</title>
   <link rel="stylesheet" href="./font.css">
   <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./style.css">
   <script src="./matter.js" defer></script>
 </head>
 
@@ -14,8 +15,8 @@
   <section class="flex flex-col justify-between h-screen">
     <header class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
       <!-- logo -->
-      <svg class="pointer-events-auto" width="70" height="70" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" width="198px" height="198px"
+      <svg class="pointer-events-auto" width="70" height="70" fill="#000000" version="1.1" id="Capa_1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="198px" height="198px"
         viewBox="-230.76 -230.76 1423.02 1423.02" xml:space="preserve" stroke="currentColor" stroke-width="0.009615"
         transform="rotate(0)">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -38,17 +39,15 @@
       <!-- nav icons svg -->
       <div class="flex gap-4">
         <!-- phone -->
-        <svg class="pointer-events-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-phone">
+        <svg class="feather pointer-events-auto hover:cursor-pointer feather-phone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path
             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
           </path>
         </svg>
         <!-- sun/moon -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-sun">
+        <svg class="feather pointer-events-auto hover:cursor-pointer feather-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
           <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -59,13 +58,13 @@
           <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
-        <svg class="pointer-events-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-moon hidden pointer-events-auto">
+        <svg class="feather pointer-events-auto hover:cursor-pointer feather-moon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
         <!-- whatsapp -->
-        <svg class="pointer-events-auto" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp"
+        <svg class="pointer-events-auto hover:cursor-pointer" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp"
           class="svg-inline--fa fa-whatsapp fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" width="24"
           height="24" viewBox="0 0 448 512">
           <path fill="currentColor"
@@ -75,7 +74,7 @@
       </div>
     </header>
     <!-- canvas for matter.js -->
-    <div class="absolute inset-0" id="wrapper-canvas">
+    <div class="absolute inset-0 hidden md:block" id="wrapper-canvas">
     </div>
     <!-- Bg image, infos, and social links -->
     <div class="pointer-events-none relative flex -mt-19">
@@ -171,6 +170,7 @@
         </li>
       </ul>
     </div>
+    <!-- scroll down -->
     <div
       class="self-center relative after:content-[''] after:absolute after:w-[4px] after:h-4 after:bg-gray-500 after:left-[47.5%] after:top-5/6">
       <button
@@ -193,8 +193,6 @@
       </button>
     </div>
   </section>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
   <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
