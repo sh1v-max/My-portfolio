@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
@@ -5944,6 +5945,254 @@
       }
     }
   }
+  .after\:absolute {
+    &::after {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .after\:top-0 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 0);
+    }
+  }
+  .after\:top-1\/2 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(1/2 * 100%);
+    }
+  }
+  .after\:top-1\/3 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(1/3 * 100%);
+    }
+  }
+  .after\:top-2\/3 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(2/3 * 100%);
+    }
+  }
+  .after\:top-3\/3 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(3/3 * 100%);
+    }
+  }
+  .after\:top-3\/4 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(3/4 * 100%);
+    }
+  }
+  .after\:top-4\/4 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(4/4 * 100%);
+    }
+  }
+  .after\:top-4\/6 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(4/6 * 100%);
+    }
+  }
+  .after\:top-5\/6 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(5/6 * 100%);
+    }
+  }
+  .after\:top-7\/10 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(7/10 * 100%);
+    }
+  }
+  .after\:top-8\/10 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(8/10 * 100%);
+    }
+  }
+  .after\:top-9\/10 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(9/10 * 100%);
+    }
+  }
+  .after\:top-18\/20 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(18/20 * 100%);
+    }
+  }
+  .after\:top-full {
+    &::after {
+      content: var(--tw-content);
+      top: 100%;
+    }
+  }
+  .after\:left-1\/2 {
+    &::after {
+      content: var(--tw-content);
+      left: calc(1/2 * 100%);
+    }
+  }
+  .after\:left-\[1\] {
+    &::after {
+      content: var(--tw-content);
+      left: 1;
+    }
+  }
+  .after\:left-\[1px\] {
+    &::after {
+      content: var(--tw-content);
+      left: 1px;
+    }
+  }
+  .after\:left-\[4\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 4%;
+    }
+  }
+  .after\:left-\[47\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 47%;
+    }
+  }
+  .after\:left-\[47\.5\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 47.5%;
+    }
+  }
+  .after\:left-\[48\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 48%;
+    }
+  }
+  .after\:left-\[49\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 49%;
+    }
+  }
+  .after\:left-\[49\.1\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 49.1%;
+    }
+  }
+  .after\:left-\[49\.4\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 49.4%;
+    }
+  }
+  .after\:left-\[49\.6\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 49.6%;
+    }
+  }
+  .after\:left-\[49\.7\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 49.7%;
+    }
+  }
+  .after\:left-\[49\.9\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 49.9%;
+    }
+  }
+  .after\:left-\[49\.65\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 49.65%;
+    }
+  }
+  .after\:left-\[50\%\] {
+    &::after {
+      content: var(--tw-content);
+      left: 50%;
+    }
+  }
+  .after\:left-\[50\] {
+    &::after {
+      content: var(--tw-content);
+      left: 50;
+    }
+  }
+  .after\:h-2 {
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 2);
+    }
+  }
+  .after\:h-4 {
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 4);
+    }
+  }
+  .after\:h-7 {
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 7);
+    }
+  }
+  .after\:h-8 {
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 8);
+    }
+  }
+  .after\:w-\[2px\] {
+    &::after {
+      content: var(--tw-content);
+      width: 2px;
+    }
+  }
+  .after\:w-\[4px\] {
+    &::after {
+      content: var(--tw-content);
+      width: 4px;
+    }
+  }
+  .after\:bg-gray-500 {
+    &::after {
+      content: var(--tw-content);
+      background-color: var(--color-gray-500);
+    }
+  }
+  .after\:bg-red-400 {
+    &::after {
+      content: var(--tw-content);
+      background-color: var(--color-red-400);
+    }
+  }
+  .after\:content-\[\'\'\] {
+    &::after {
+      content: var(--tw-content);
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\'\|\'\] {
+    &::after {
+      content: var(--tw-content);
+      --tw-content: '|';
+      content: var(--tw-content);
+    }
+  }
   .hover\:-right-9 {
     &:hover {
       @media (hover: hover) {
@@ -5955,6 +6204,13 @@
     &:hover {
       @media (hover: hover) {
         right: calc(var(--spacing) * -10);
+      }
+    }
+  }
+  .hover\:scale-\[1\.01\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.01;
       }
     }
   }
@@ -5983,6 +6239,13 @@
     &:hover {
       @media (hover: hover) {
         scale: 1.;
+      }
+    }
+  }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
       }
     }
   }
@@ -6265,6 +6528,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -6309,6 +6577,7 @@
       --tw-drop-shadow-size: initial;
       --tw-duration: initial;
       --tw-ease: initial;
+      --tw-content: "";
     }
   }
 }
