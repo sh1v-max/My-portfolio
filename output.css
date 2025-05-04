@@ -38,6 +38,7 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --radius-lg: 0.5rem;
+    --radius-2xl: 1rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -5787,6 +5788,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -5830,6 +5834,9 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
   }
   .rounded-\[50px\] {
     border-radius: 50px;
@@ -5895,6 +5902,15 @@
   .bg-\[\#4595eb\] {
     background-color: #4595eb;
   }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[\#fc815\] {
+    background-color: #fc815;
+  }
+  .bg-\[\#fc815c\] {
+    background-color: #fc815c;
+  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
@@ -5947,6 +5963,12 @@
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -5958,6 +5980,9 @@
   }
   .px-\[10px\] {
     padding-inline: 10px;
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -6278,6 +6303,12 @@
       top: 100%;
     }
   }
+  .after\:bottom-0 {
+    &::after {
+      content: var(--tw-content);
+      bottom: calc(var(--spacing) * 0);
+    }
+  }
   .after\:left-1\/2 {
     &::after {
       content: var(--tw-content);
@@ -6386,6 +6417,12 @@
       height: calc(var(--spacing) * 4);
     }
   }
+  .after\:h-5 {
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 5);
+    }
+  }
   .after\:h-7 {
     &::after {
       content: var(--tw-content);
@@ -6396,6 +6433,12 @@
     &::after {
       content: var(--tw-content);
       height: calc(var(--spacing) * 8);
+    }
+  }
+  .after\:w-5 {
+    &::after {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 5);
     }
   }
   .after\:w-\[2px\] {
@@ -6410,6 +6453,85 @@
       width: 4px;
     }
   }
+  .after\:-translate-1\/2 {
+    &::after {
+      content: var(--tw-content);
+      --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+      --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .after\:-translate-x-1\/2 {
+    &::after {
+      content: var(--tw-content);
+      --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .after\:-translate-y-1\/2 {
+    &::after {
+      content: var(--tw-content);
+      --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .after\:translate-y-1\/2 {
+    &::after {
+      content: var(--tw-content);
+      --tw-translate-y: calc(1/2 * 100%);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .after\:rotate-45 {
+    &::after {
+      content: var(--tw-content);
+      rotate: 45deg;
+    }
+  }
+  .after\:border-6 {
+    &::after {
+      content: var(--tw-content);
+      border-style: var(--tw-border-style);
+      border-width: 6px;
+    }
+  }
+  .after\:border-solid {
+    &::after {
+      content: var(--tw-content);
+      --tw-border-style: solid;
+      border-style: solid;
+    }
+  }
+  .after\:border-t-\[\#fc815c\] {
+    &::after {
+      content: var(--tw-content);
+      border-top-color: #fc815c;
+    }
+  }
+  .after\:border-r-transparent {
+    &::after {
+      content: var(--tw-content);
+      border-right-color: transparent;
+    }
+  }
+  .after\:border-b-transparent {
+    &::after {
+      content: var(--tw-content);
+      border-bottom-color: transparent;
+    }
+  }
+  .after\:border-l-transparent {
+    &::after {
+      content: var(--tw-content);
+      border-left-color: transparent;
+    }
+  }
+  .after\:bg-\[\#fc815c\] {
+    &::after {
+      content: var(--tw-content);
+      background-color: #fc815c;
+    }
+  }
   .after\:bg-gray-500 {
     &::after {
       content: var(--tw-content);
@@ -6420,6 +6542,12 @@
     &::after {
       content: var(--tw-content);
       background-color: var(--color-red-400);
+    }
+  }
+  .after\:bg-red-500 {
+    &::after {
+      content: var(--tw-content);
+      background-color: var(--color-red-500);
     }
   }
   .after\:content-\[\'\'\] {
