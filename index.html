@@ -12,6 +12,7 @@
 </head>
 
 <body class="bg-[#111] text-white font-['Nunito']">
+  <!-- Main Section -->
   <section class="flex flex-col justify-between h-screen">
     <header class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
       <!-- logo -->
@@ -173,8 +174,7 @@
       </ul>
     </div>
     <!-- scroll down -->
-    <div
-      class="self-center relative after:content-[''] after:absolute after:w-[4px] after:h-4 after:bg-gray-500 after:left-[47.5%] after:top-5/6">
+    <div class="self-center relative hover:scale-105 ">
       <button
         class="group bg-[#4595eb] py-2 px-5 mb-15 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:cursor-pointer ease-in-out duration-150">
         Scroll Down
@@ -195,121 +195,154 @@
       </button>
     </div>
   </section>
-  <section class="max-w-screen-xl mx-auto px-4">
-    <h2 class="text-4xl w-max mx-auto text-center text-[#1788ae] border-b-2 border-[#1788ae]">
+  <!-- work Section -->
+  <section class="max-w-screen-xl mx-auto px-4 relative">
+    <h2 class="text-4xl w-max mx-auto bg-[#111] relative z-10 text-center text-[#1788ae] border-b-2 border-[#1788ae]">
       Latest Works
     </h2>
-    <!-- work 1 -->
-    <div class="flex gap-[80px] items-center mt-12">
-      <a href="#" class="w-full flex">
-        <div class="relative group">
-          <span class="flex bg-[#fc815c] px-3 py-2 rounded w-max items-center gap-1 absolute top-5 left-1/2 -translate-x-1/2
-          opacity-0 group-hover:-top-8 group-hover:opacity-100 group-hover:animate-[catJump_0.4s_ease-in-out] duration-100
-          after:content-[''] after:w-4 after:h-4 after:bg-[#fc815c] after:absolute 
-          after:top-1/2 after:left-1/2 after:-translate-x-1/2
-          after:rotate-45 after:bottom-0 after:translate-y-1/2
-          ">Harigurus
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-external-link">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </span>
-          <img class="max-w-[400px] mr-auto relative" src="https://anuragsinghbam.netlify.app/images/harigurus.webp" alt="" />
+    <!-- works -->
+    <div>
+      <!-- work 1 -->
+      <div class="flex gap-[80px] items-center mt-12 relative">
+        <!-- Horizontal line -->
+        <div class="h-[2px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2"></div>
+        <div
+          class="w-5 h-5 rounded-full border-[3px] border-[#fc815c] bg-white z-10 absolute left-1/2 -translate-x-1/2">
         </div>
-      </a>
-      <div class="w-full">
-        <h3 class="text-[#fc815c] font-bold text-4xl">Harigurus</h3>
-        <span class="text-[#fc815c] text-lg">(Event Booking)</span>
-        <p class="text-justify mt-2">
-          HariGurus is a one-stop-shop for all Hindu religious, customs and
-          traditional requirements. Built the complete site from scratch.
-        </p>
+        <a href="#" class="w-full flex relative">
+          <div class="relative group hover:scale-105 ease-in-out duration-250">
+            <span class="flex bg-[#fc815c] px-3 py-2 rounded w-max items-center gap-1 absolute top-5 left-1/2 -translate-x-1/2
+            opacity-0 group-hover:-top-10 group-hover:opacity-100 group-hover:animate-[catJump_0.4s_ease-in-out] duration-100
+            after:content-[''] after:w-4 after:h-4 after:bg-[#fc815c] after:absolute 
+            after:top-1/2 after:left-1/2 after:-translate-x-1/2
+            after:rotate-45 after:bottom-0 after:translate-y-1/2
+            ">Harigurus
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-external-link">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+            <img class="max-w-[400px] mr-auto relative" src="https://anuragsinghbam.netlify.app/images/harigurus.webp"
+              alt="" />
+          </div>
+        </a>
+        <div class="w-full">
+          <h3 class="text-[#fc815c] font-bold text-4xl">Harigurus</h3>
+          <span class="text-[#fc815c] text-lg">(Event Booking)</span>
+          <p class="text-justify mt-2">
+            HariGurus is a one-stop-shop for all Hindu religious, customs and
+            traditional requirements. Built the complete site from scratch.
+          </p>
 
-        <ul class="flex flex-wrap gap-2 mt-2">
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #react.js
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #express.js
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #node.js
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #swiper.js
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #mongoDB
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #mongoose
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #css
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #javascript
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #figma
-          </li>
-        </ul>
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #react.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #express.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #node.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #swiper.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #mongoDB
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #mongoose
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #javascript
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #figma
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- work 2 -->
+      <div class="flex gap-[80px] items-center mt-12 relative">
+        <!-- Horizontal line -->
+        <div class="h-[2px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2"></div>
+        <div
+          class="w-5 h-5 rounded-full border-[3px] border-[#ffe578] bg-white z-10 absolute left-1/2 -translate-x-1/2">
+        </div>
+        <div class="w-full">
+          <h3 class="text-[#ffe578] font-bold text-4xl">EazyGrad</h3>
+          <span class="text-[#ffe578] text-lg">(EdTech Startup)</span>
+          <p class="text-justify mt-2">
+            Being a lead developer, revamped the site to a highly responsive,
+            and interactive website. Created new features and pages. Worked as a
+            team with product manager and ux designer.
+          </p>
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #react.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #express.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #node.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #swiper.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #mongoDB
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #mongoose
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #javascript
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #figma
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="w-full flex ">
+          <div class="relative group hover:scale-105 ease-in-out duration-250  ml-auto">
+            <span class="flex bg-[#ffe578] text-black px-3 py-2 rounded w-max items-center gap-1 absolute top-5 left-1/2 -translate-x-1/2
+            opacity-0 group-hover:-top-10 group-hover:opacity-100 group-hover:animate-[catJump_0.4s_ease-in-out] duration-100
+            after:content-[''] after:w-4 after:h-4 after:bg-[#ffe578] after:absolute 
+            after:top-1/2 after:left-1/2 after:-translate-x-1/2
+            after:rotate-45 after:bottom-0 after:translate-y-1/2
+            ">Harigurus
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-external-link">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+            <img class="max-w-[400px] relative" src="https://anuragsinghbam.netlify.app/images/eazygrad.webp"
+              alt="" />
+          </div>
+        </a>
       </div>
     </div>
-    <!-- work 2 -->
-    <div class="flex gap-[80px] items-center mt-12">
-      <div class="w-full">
-        <h3 class="text-[#ffe578] font-bold text-4xl">EazyGrad</h3>
-        <span class="text-[#ffe578] text-lg">(EdTech Startup)</span>
-        <p class="text-justify mt-2">
-          Being a lead developer, revamped the site to a highly responsive,
-          and interactive website. Created new features and pages. Worked as a
-          team with product manager and ux designer.
-        </p>
-
-        <ul class="flex flex-wrap gap-2 mt-2">
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #react.js
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #express.js
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #node.js
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #swiper.js
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #mongoDB
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #mongoose
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #css
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #javascript
-          </li>
-          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
-            #figma
-          </li>
-        </ul>
-      </div>
-      <a href="#" class="w-full">
-        <img class="max-w-[400px] ml-auto" src="https://anuragsinghbam.netlify.app/images/eazygrad.webp" alt="" />
-      </a>
-    </div>
+    <!-- Vertical Line -->
+    <div class="w-[2px] bg-[#1788ae] absolute -top-5 -bottom-20 left-1/2 -translate-x-1/2"></div>
   </section>
+  <!-- Footer -->
   <div>
     <footer class="bg-[#0a0a0a] py-12 mt-24 border-t border-gray-800">
       <div class="max-w-screen-xl mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <!-- Logo and tagline -->
           <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
             <svg width="50" height="50" fill="currentColor" viewBox="-230.76 -230.76 1423.02 1423.02" class="mb-3">
               <g>
@@ -321,7 +354,6 @@
             <p class="text-gray-400">Building modern web experiences</p>
           </div>
 
-          <!-- Quick links -->
           <div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
             <a href="#" class="text-gray-400 hover:text-[#1595B6] transition duration-300">Home</a>
             <a href="#" class="text-gray-400 hover:text-[#1595B6] transition duration-300">About</a>
@@ -329,7 +361,6 @@
             <a href="#" class="text-gray-400 hover:text-[#1595B6] transition duration-300">Contact</a>
           </div>
 
-          <!-- Social icons -->
           <div class="flex gap-6">
             <a href="https://www.linkedin.com/in/shiv-shankar-singh-/" target="_blank" aria-label="LinkedIn">
               <svg class="w-6 text-gray-400 hover:text-[#0A66C2] transition duration-300 ease-in-out"
@@ -361,6 +392,7 @@
       </div>
     </footer>
   </div>
+
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
   <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script> -->
