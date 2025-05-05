@@ -12,6 +12,11 @@
 </head>
 
 <body class="bg-[#111] text-white font-['Nunito']">
+  <!-- Background -->
+  <div class="-z-10 fixed top-[90%] -left-[30%] md:top-[20%] md:-left-[20%] w-screen h-screen scale-250 md:scale-120">
+    <img src="./assets/images/bg-svg.svg" alt="">
+    <!-- <img class="fixed bottom-0" src="./assets/images/bg-svg-bottom.svg" alt=""> -->
+  </div>
   <!-- Main Section -->
   <section class="flex flex-col justify-between h-screen">
     <header class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
@@ -124,7 +129,7 @@
           </button>
         </div>
       </div>
-
+      <!-- Social Links -->
       <ul class="pointer-events-auto absolute ml-auto space-y-6 right-8">
         <li>
           <a href="https://www.linkedin.com/in/shiv-shankar-singh-/" target="_blank">
@@ -197,13 +202,15 @@
   </section>
   <!-- work Section -->
   <section class="max-w-screen-xl mx-auto px-4 relative">
-    <h2 class="text-xl md:text-4xl w-max mx-auto bg-[#111] relative z-10 text-center text-[#1788ae] border-b-2 border-[#1788ae]">
+    <h2
+      class="text-xl md:text-4xl w-max mx-auto bg-[#111] relative z-10 text-center text-[#1788ae] border-b-2 border-[#1788ae]">
       Latest Works
     </h2>
     <!-- works -->
-    <div class=" p-2 projects-work">
+    <div class=" px-2 projects-work">
       <!-- work 1 -->
-      <div class=" md:bg-gray-500 lg:bg-gray-800 px-2 py-10 flex flex-col flex-1 md:flex-row lg:flex-row gap-[80px] items-center mt-12 relative">
+      <div
+        class="md:border-non flex flex-col flex-1 md:flex-row lg:flex-row gap-[20px] md:gap-[50px] lg:gap-[100px] mt-20 items-center relative">
         <!-- Horizontal line -->
         <div class="hidden md:block lg:block h-[2px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2"></div>
         <!-- Circle -->
@@ -227,19 +234,18 @@
                 <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
             </span>
-            <img class=" w-[90%] md:w-full lg:w-full mx-auto relative" src="./assets/project_img/Group 1.webp"
-              alt="" />
+            <img class=" w-[90%] md:w-full lg:w-full mx-auto relative" src="./assets/project_img/Group 1.webp" alt="" />
           </div>
         </a>
-        <div class="w-full">
-          <h3 class="text-[#fc815c] font-bold text-4xl">Harigurus</h3>
-          <span class="text-[#fc815c] text-lg">(Event Booking)</span>
-          <p class="text-justify mt-2">
+        <div class="w-full px-5 md:p-10 lg:p-5">
+          <h3 class="text-[#fc815c] font-bold text-[20px] md:text-3xl lg:text-4xl">Harigurus</h3>
+          <span class="text-[#fc815c] text-[15px] md:text-lg">(Event Booking)</span>
+          <p class="text-justify text-[15px] md:text-lg mt-2">
             HariGurus is a one-stop-shop for all Hindu religious, customs and
             traditional requirements. Built the complete site from scratch.
           </p>
           <!-- Skills -->
-          <ul class="flex flex-wrap gap-2 mt-2">
+          <ul class="flex flex-wrap gap-2 mt-4 md:gap-3 md:mt-2">
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
               #react.js
             </li>
@@ -271,23 +277,23 @@
         </div>
       </div>
       <!-- work 2 -->
-      <div class=" md:bg-gray-500 lg:bg-gray-800 px-2 py-10 flex flex-col-reverse md:flex-row lg:flex-row gap-[80px] items-center mt-12 relative">
+      <div
+        class="md:border-non flex flex-col-reverse flex-1 md:flex-row lg:flex-row gap-[20px] md:gap-[50px] lg:gap-[100px] mt-20 items-center  relative">
         <!-- Horizontal line -->
         <div class="hidden md:block lg:block h-[2px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2"></div>
         <!-- Circle -->
         <div
           class="hidden md:block lg:block w-5 h-5 rounded-full border-[3px] border-[#ffe578] bg-white z-10 absolute left-1/2 -translate-x-1/2">
         </div>
-        <div class="w-full">
-          <h3 class="text-[#ffe578] font-bold text-4xl">EazyGrad</h3>
-          <span class="text-[#ffe578] text-lg">(EdTech Startup)</span>
-          <p class="text-justify mt-2">
-            Being a lead developer, revamped the site to a highly responsive,
-            and interactive website. Created new features and pages. Worked as a
-            team with product manager and ux designer.
+        <div class="w-full px-5 md:p-10 lg:p-5">
+          <h3 class="text-[#ffe578] font-bold text-[20px] md:text-3xl lg:text-4xl">Harigurus</h3>
+          <span class="text-[#ffe578] text-[15px] md:text-lg">(Event Booking)</span>
+          <p class="text-justify text-[15px] md:text-lg mt-2">
+            HariGurus is a one-stop-shop for all Hindu religious, customs and
+            traditional requirements. Built the complete site from scratch.
           </p>
           <!-- Skills -->
-          <ul class="flex flex-wrap gap-2 mt-2">
+          <ul class="flex flex-wrap gap-2 mt-4 md:gap-3 md:mt-2">
             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
               #react.js
             </li>
@@ -334,65 +340,93 @@
                 <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
             </span>
-            <img class=" w-[90%] md:w-full lg:w-full mx-auto relative" src="./assets/project_img/Group 1.webp"
-              alt="" />
+            <img class=" w-[90%] md:w-full lg:w-full mx-auto relative" src="./assets/project_img/Group 1.webp" alt="" />
           </div>
         </a>
       </div>
     </div>
     <!-- Vertical Line -->
-    <div class="hidden md:block lg:block w-[2px] bg-[#1788ae] absolute -top-5 -bottom-20 left-1/2 -translate-x-1/2"></div>
+    <div class="hidden md:block lg:block w-[2px] bg-[#1788ae] absolute -top-5 -bottom-20 left-1/2 -translate-x-1/2">
+    </div>
   </section>
   <!-- Footer -->
   <div>
-    <footer class="bg-[#0a0a0a] py-12 mt-24 border-t border-gray-800">
-      <div class="max-w-screen-xl mx-auto px-4">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
-            <svg width="50" height="50" fill="currentColor" viewBox="-230.76 -230.76 1423.02 1423.02" class="mb-3">
-              <g>
-                <path
-                  d="M674.899,686.15c17.5-27.5,26.301-57.1,26.301-88.7c0-34.8-7.301-64.1-22-87.699c-14.7-23.7-34.9-42.301-60.9-56 c-25.9-13.601-65.9-26.9-120-39.601c-54.1-12.8-88.2-25-102.2-36.8c-11-9.3-16.5-20.4-16.5-33.4c0-14.3,5.9-25.7,17.7-34.2 c18.3-13.3,43.6-19.9,75.9-19.9c31.3,0,54.8,6.2,70.399,18.6c9.601,7.6,17.101,18.2,22.601,31.8c7,17.4,24.1,28.6,42.8,27.8 l26.5-1.2c29.7-1.3,49.5-31.1,39.399-59.1c-9.1-25-23.899-46.5-44.6-64.5c-34.9-30.3-87-45.5-156.1-45.5 c-42.301,0-78.5,6.4-108.4,19.2c-29.9,12.8-52.8,31.4-68.8,55.8c-15.9,24.4-23.9,50.7-23.9,78.7c0,43.6,16.9,80.5,50.7,110.8 c24,21.5,65.9,39.699,125.5,54.5c46.3,11.5,76,19.5,89,24c19,6.8,32.4,14.699,40,23.899c7.6,9.101,11.5,20.2,11.5,33.2 c0,20.3-9.1,38-27.2,53.2c-18.2,15.2-45.1,22.7-81,22.7c-33.8,0-60.7-8.5-80.6-25.5c-13.4-11.5-23.8-27.4-31.2-47.7 c-6.8-18.9-25.6-30.7-45.6-28.8l-22.5,2.199c-27.9,2.7-46,30.4-37.7,57.101c11.4,36.5,30.1,66,56,88.3 c37.3,32.2,90.8,48.3,160.399,48.3c47.801,0,87.801-6.7,119.801-20.1C632.6,734.15,657.399,713.65,674.899,686.15z">
-                </path>
-              </g>
-            </svg>
-            <p class="text-gray-400">Building modern web experiences</p>
-          </div>
+    <footer class="h-screen w-full flex flex-col justify-center items-center">
+      <div class="w-full max-w-6xl px-6 flex flex-col items-center">
+        <!-- Logo/Brand -->
+        <div class="mb-16">
+          <svg width="60" height="60" fill="currentColor" class="text-[#1595B6]"
+            viewBox="-230.76 -230.76 1423.02 1423.02">
+            <g>
+              <path
+                d="M674.899,686.15c17.5-27.5,26.301-57.1,26.301-88.7c0-34.8-7.301-64.1-22-87.699c-14.7-23.7-34.9-42.301-60.9-56 c-25.9-13.601-65.9-26.9-120-39.601c-54.1-12.8-88.2-25-102.2-36.8c-11-9.3-16.5-20.4-16.5-33.4c0-14.3,5.9-25.7,17.7-34.2 c18.3-13.3,43.6-19.9,75.9-19.9c31.3,0,54.8,6.2,70.399,18.6c9.601,7.6,17.101,18.2,22.601,31.8c7,17.4,24.1,28.6,42.8,27.8 l26.5-1.2c29.7-1.3,49.5-31.1,39.399-59.1c-9.1-25-23.899-46.5-44.6-64.5c-34.9-30.3-87-45.5-156.1-45.5 c-42.301,0-78.5,6.4-108.4,19.2c-29.9,12.8-52.8,31.4-68.8,55.8c-15.9,24.4-23.9,50.7-23.9,78.7c0,43.6,16.9,80.5,50.7,110.8 c24,21.5,65.9,39.699,125.5,54.5c46.3,11.5,76,19.5,89,24c19,6.8,32.4,14.699,40,23.899c7.6,9.101,11.5,20.2,11.5,33.2 c0,20.3-9.1,38-27.2,53.2c-18.2,15.2-45.1,22.7-81,22.7c-33.8,0-60.7-8.5-80.6-25.5c-13.4-11.5-23.8-27.4-31.2-47.7 c-6.8-18.9-25.6-30.7-45.6-28.8l-22.5,2.199c-27.9,2.7-46,30.4-37.7,57.101c11.4,36.5,30.1,66,56,88.3 c37.3,32.2,90.8,48.3,160.399,48.3c47.801,0,87.801-6.7,119.801-20.1C632.6,734.15,657.399,713.65,674.899,686.15z">
+              </path>
+            </g>
+          </svg>
+        </div>
 
-          <div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
-            <a href="#" class="text-gray-400 hover:text-[#1595B6] transition duration-300">Home</a>
-            <a href="#" class="text-gray-400 hover:text-[#1595B6] transition duration-300">About</a>
-            <a href="#" class="text-gray-400 hover:text-[#1595B6] transition duration-300">Projects</a>
-            <a href="#" class="text-gray-400 hover:text-[#1595B6] transition duration-300">Contact</a>
-          </div>
+        <!-- Main Contact Section -->
+        <div class="text-center mb-16">
+          <h2 class="text-gray-400 text-xl mb-4 tracking-wide">Get in Touch</h2>
+          <h1 class="text-white text-6xl font-bold mb-16">Contact Me</h1>
 
-          <div class="flex gap-6">
-            <a href="https://www.linkedin.com/in/shiv-shankar-singh-/" target="_blank" aria-label="LinkedIn">
-              <svg class="w-6 text-gray-400 hover:text-[#0A66C2] transition duration-300 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!-- Social Media Icons -->
+          <div class="flex items-center justify-center gap-10 mb-16">
+            <a href="https://www.linkedin.com/in/shiv-shankar-singh-/" target="_blank" aria-label="LinkedIn"
+              class="text-gray-500 hover:text-[#1595B6] transition-colors duration-300">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path fill="currentColor"
                   d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
               </svg>
             </a>
-            <a href="https://x.com/1amWaziR" target="_blank" aria-label="Twitter">
-              <svg class="w-6 text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <a href="https://github.com/sh1v-max" target="_blank" aria-label="GitHub"
+              class="text-gray-500 hover:text-[#1595B6] transition-colors duration-300">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                <path fill="currentColor"
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg>
+            </a>
+            <a href="https://x.com/1amWaziR" target="_blank" aria-label="Twitter"
+              class="text-gray-500 hover:text-[#1595B6] transition-colors duration-300">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path fill="currentColor"
                   d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
               </svg>
             </a>
-            <a href="https://github.com/sh1v-max" target="_blank" aria-label="GitHub">
-              <svg class="w-6 text-gray-400 hover:text-gray-200 transition duration-300 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <a href="https://www.instagram.com/wiwiwiwi.exe/" target="_blank" aria-label="Instagram"
+              class="text-gray-500 hover:text-[#1595B6] transition-colors duration-300">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path fill="currentColor"
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+            </a>
+            <a href="mailto:singhshiv0427@gmail.com" aria-label="Email"
+              class="text-gray-500 hover:text-[#1595B6] transition-colors duration-300">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
               </svg>
             </a>
           </div>
         </div>
 
-        <div class="mt-10 pt-6 border-t border-gray-800 text-center">
-          <p class="text-gray-500 text-sm">© 2025 Shiv Shankar Singh. All rights reserved.</p>
+        <!-- Navigation Menu -->
+        <div class="flex justify-center space-x-16 mb-20">
+          <a href="#about"
+            class="text-gray-400 hover:text-[#1595B6] font-medium transition-colors duration-300">About</a>
+          <a href="#skills"
+            class="text-gray-400 hover:text-[#1595B6] font-medium transition-colors duration-300">Skills</a>
+          <a href="#projects"
+            class="text-gray-400 hover:text-[#1595B6] font-medium transition-colors duration-300">Projects</a>
+          <a href="#contact"
+            class="text-gray-400 hover:text-[#1595B6] font-medium transition-colors duration-300">Contact</a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="text-center">
+          <p class="text-gray-500 mb-3">Made with ❤️ by Shiv Shankar Singh</p>
+          <p class="text-gray-600 text-sm">© 2025 Shiv Shankar Singh. All rights reserved.</p>
+          <p class="text-gray-700 text-sm mt-2">Building modern web experiences</p>
         </div>
       </div>
     </footer>
