@@ -130,18 +130,15 @@
         </li>
       </ul>
     </div>
-    <!-- scroll down -->
-    <div class="self-center relative  pb-20">
-      <a href="#projects"
-        class="inline-flex rounded-full hover:bg-[#111] hover:text-white hover:border-[#b3df8a] border-[#b3df8a] transition duration-300 ease-in-out  items-center border-2 py-3 px-6 font-medium bg-[#b3df8a] text-black">
-        View My Projects
-        <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd"
-            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-            clip-rule="evenodd" />
-        </svg>
+    <!-- Scroll Down Animation -->
+    <div class="self-center relative pb-10">
+      <a href="#projects" class="flex flex-col items-center text-[#b3df8a] hover:text-white transition duration-300">
+        <div class="w-6 h-10 rounded-full border-2 border-[#b3df8a] flex justify-center items-start p-1">
+          <div class="w-1 h-1 rounded-full bg-[#b3df8a] animate-scroll-dot"></div>
+        </div>
       </a>
     </div>
+
   </section>
   <!-- About Me -->
   <section id="about" class=" min-h-screen flex flex-col justify-center">
@@ -236,7 +233,7 @@
               <p class="mt-2 text-gray-600">Experienced</p>
             </div>
             <!-- Coming soon -->
-            <div class="text-center p-6 border rounded-2xl shadow-lg hover:scale-105transition duration-300">
+            <div class="text-center p-6 border rounded-2xl shadow-lg hover:scale-105 transition duration-300">
               <img src="./assets/skills/question1.png" alt="Git" class="w-16 h-16 mx-auto mb-4">
               <h3 class="text-xl font-semibold">Coming Soon...</h3>
               <p class="mt-2 text-gray-600">Undefined</p>
@@ -333,14 +330,10 @@
   </section>
   <!-- Testimonials -->
   <section class=" max-w-screen-xl h-screen mx-auto py-10">
-    <h2
-      class="text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
-      What my clients are saying?
-    </h2>
     <!-- Swiper -->
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide px-4">
+      <div class=" swiper-wrapper">
+        <div class=" swiper-slide px-4">
           <div
             class="border-2 border-gray-500 rounded-2xl flex flex-col md:flex-row w-full md:max-w-[800px] items-center p-9 cursor-grab">
             <img class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full"
@@ -417,10 +410,6 @@
   </section>
   <!-- Contact Section -->
   <section class="max-w-screen-xl mx-auto px-4 pb-12">
-    <h2
-      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
-      Let's Connect
-    </h2>
     <div class="flex flex-col md:flex-row items-center mt-10">
       <!-- Image -->
       <div class="w-full">
@@ -563,7 +552,6 @@
       },
     });
   </script>
-
 </body>
 
 </html>
