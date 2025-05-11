@@ -41,6 +41,22 @@
 
   <!-- Main Section -->
   <section class="flex flex-col justify-between h-screen">
+    <!-- BG image -->
+    <div class="absolute top-0 left-0 h-full w-full overflow-hidden">
+      <!-- Single gradient overlay with radial effect (optional) -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent opacity-100"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#111] to-transparent opacity-80"></div>
+      <div class="absolute inset-0 bg-gradient-to-l from-[#111] to-transparent opacity-80"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#111] to-transparent opacity-80"></div>    
+      <!-- The image: never shrinks, always center-aligned -->
+      <img
+      class="absolute top-1/2 left-1/2 min-w-[100vw] min-h-[100vh] -translate-x-1/2 -translate-y-1/2 object-cover -z-10"
+        src="./assets/bgimg/bw-map.jpeg"
+        alt="bg-img"
+      />
+    </div>
+    
+    <!-- Header -->
     <header class="z-10 w-full px-4 mt-4 max-w-screen-xl mx-auto">
       <div class="flex items-center justify-between py-4">
         <!-- Logo / Name -->
@@ -72,12 +88,12 @@
 
     </header>
 
-    <!-- Bg image, infos, and social links -->
+    <!-- infos, and social links -->
     <div class="relative flex -mt-19">
       <div class="w-full px-4 max-w-screen-xl mx-auto">
         <!-- infos -->
         <div class="  relative ml-6 md:ml-24">
-          <h1 class="text-4xl md:text-7xl font-['spartan'] font-bold mr-16">Shiv Shankar Singh</h1>
+          <h1 class="text-4xl md:text-7xl font-mova font-bold mr-16">Shiv Shankar Singh</h1>
           <p class="font-['Merriweather'] italic md:mt-6 md:mb-8 mt-3 mb-4">I'm a Frontend Web Developer</p>
         </div>
       </div>
@@ -133,8 +149,8 @@
     <!-- Scroll Down Animation -->
     <div class="self-center relative pb-10">
       <a href="#projects" class="flex flex-col items-center text-[#b3df8a] hover:text-white transition duration-300">
-        <div class="w-6 h-10 rounded-full border-2 border-[#b3df8a] flex justify-center items-start p-1">
-          <div class="w-1 h-1 rounded-full bg-[#b3df8a] animate-scroll-dot"></div>
+        <div class="w-8 h-14 rounded-full border-2 border-[#b3df8a] flex justify-center items-start p-1">
+          <div class="w-1.5 h-1.5 rounded-full bg-[#b3df8a] animate-scroll-dot"></div>
         </div>
       </a>
     </div>

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Mova';
+  src: url('./assets/fonts/mova.otf');
+}
+
 @layer utilities {
   @keyframes catJump {
     0%   { transform: translateY(0); opacity: 0; }
@@ -15,11 +20,11 @@
     opacity: 1;
   }
   50% {
-    transform: translateY(8px);
+    transform: translateY(30px);
     opacity: 0.5;
   }
 }
 
 .animate-scroll-dot {
-  animation: scroll-dot 1.4s infinite ease-in-out;
+  animation: scroll-dot 2.4s infinite ease-in-out;
 }
