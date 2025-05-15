@@ -1,9 +1,96 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Mova';
-  src: url('./assets/fonts/mova.otf');
+  font-family: 'Amsterdam';
+  src: url('./assets/fonts/Amsterdam.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Arenq';
+  src: url('./assets/fonts/arenq.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Beckman';
+  src: url('./assets/fonts/Beckman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cinderela';
+  src: url('./assets/fonts/Cinderela.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Countryside';
+  src: url('./assets/fonts/Countryside.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Countryside Italic';
+  src: url('./assets/fonts/CountrysideItalics.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Darlington';
+  src: url('./assets/fonts/Darlington.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Halimun';
+  src: url('./assets/fonts/Halimun.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Migae';
+  src: url('./assets/fonts/Migae.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mova';
+  src: url('./assets/fonts/mova.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overcame';
+  src: url('./assets/fonts/overcame-bold.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overcame Outline';
+  src: url('./assets/fonts/overcame-outline.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Luckyfield';
+  src: url('./assets/fonts/Luckyfield.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @layer utilities {
   @keyframes catJump {

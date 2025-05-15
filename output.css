@@ -40,8 +40,6 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
     --text-9xl: 8rem;
     --text-9xl--line-height: 1;
     --font-weight-medium: 500;
@@ -6009,9 +6007,6 @@
   .font-\[\'Spartan\'\] {
     font-family: 'Spartan';
   }
-  .font-\[\'spartan\'\] {
-    font-family: 'spartan';
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -6681,12 +6676,6 @@
       line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
-  .md\:text-7xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-7xl);
-      line-height: var(--tw-leading, var(--text-7xl--line-height));
-    }
-  }
   .md\:text-9xl {
     @media (width >= 48rem) {
       font-size: var(--text-9xl);
@@ -6708,6 +6697,11 @@
   .md\:text-\[64px\] {
     @media (width >= 48rem) {
       font-size: 64px;
+    }
+  }
+  .md\:text-\[156px\] {
+    @media (width >= 48rem) {
+      font-size: 156px;
     }
   }
   .lg\:ml-auto {
@@ -6775,8 +6769,82 @@
   }
 }
 @font-face {
+  font-family: 'Amsterdam';
+  src: url('./assets/fonts/Amsterdam.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arenq';
+  src: url('./assets/fonts/arenq.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Beckman';
+  src: url('./assets/fonts/Beckman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cinderela';
+  src: url('./assets/fonts/Cinderela.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Countryside';
+  src: url('./assets/fonts/Countryside.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Countryside Italic';
+  src: url('./assets/fonts/CountrysideItalics.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Darlington';
+  src: url('./assets/fonts/Darlington.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halimun';
+  src: url('./assets/fonts/Halimun.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Migae';
+  src: url('./assets/fonts/Migae.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Mova';
-  src: url('./assets/fonts/mova.otf');
+  src: url('./assets/fonts/mova.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Overcame';
+  src: url('./assets/fonts/overcame-bold.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Overcame Outline';
+  src: url('./assets/fonts/overcame-outline.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Luckyfield';
+  src: url('./assets/fonts/Luckyfield.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 @layer utilities {
   @keyframes catJump {
